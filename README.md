@@ -57,6 +57,14 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 
 ## BruteForce Techniques.
 
+With the brute-force techniques also there were a lot of tools that do a great job, but a few of tools that was producing high performace with this techniques like massDNS but the rate of the false positive was very high in my experience, so i decided to build my own tool, after a lot of research i found a library called adns that was capable of sending a lot of dns queries asynchronously.
+
+The tool is capable of performing brute force of 30,000 subdomains in one minute.
+
+### The Wordlist
+
+I used the 2 best wordlists jhaddix and commonspeak and combine them in one big wordlist called jhaddix_commonspeak.txt .
+
 [jhaddix Wordlist](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056) <br>
 [commonspeak Wordlist](https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains)
 
@@ -67,6 +75,10 @@ python massForce.py company_profile.txt
 ```
 
 ## Reverse Lookup Techniques.
+
+With the same previous situation and mindset, i tried to build a reverse lookup dns asynchronous tool.
+
+The tool is also capable of performing brute force of 30,000 IPs in one minute.
 
 ```
 pip install adns-python
