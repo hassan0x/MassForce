@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ######################################################
 
-Combine all the previous tools' results into one file.
+> Combine all the previous tools' results into one file.
 
 ```
 cat result1 result2 result3 > results.txt
