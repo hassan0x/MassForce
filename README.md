@@ -10,8 +10,6 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 2. BruteForce Techniques.
 3. Reverse Lookup Techniques.
 
-######################################################
-
 ## Web Scraping Techniques
 
 ### AMASS
@@ -25,8 +23,6 @@ cd amass_v3.1.9_linux_amd64
 ./amass enum --passive -d alexu.edu.eg -o result1.txt
 ```
 
-######################################################
-
 ### SUBFINDER
 
 Project: https://github.com/subfinder/subfinder
@@ -39,8 +35,6 @@ go build
 ./subfinder -d alexu.edu.eg -o result2.txt
 ```
 
-######################################################
-
 ### SUBLIST3R
 
 Project: https://github.com/aboul3la/Sublist3r
@@ -52,16 +46,12 @@ pip install -r requirements.txt
 ./sublist3r.py -d alexu.edu.eg -o result3.txt
 ```
 
-######################################################
-
-> Combine all the previous tools' results into one file.
+Combine all the previous tools' results into one file.
 
 ```
 cat result1 result2 result3 > results.txt
 cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 ```
-
-######################################################
 
 ## BruteForce Techniques.
 
@@ -74,8 +64,6 @@ sed -e 's/$/.alexu.edu.eg/' jhaddix_commonspeak.txt > company_profile.txt
 pip install adns-python
 python resolve.py company_profile.txt
 ```
-
-######################################################
 
 ## Reverse Lookup Techniques.
 
