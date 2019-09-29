@@ -17,52 +17,50 @@ cd amass_v3.1.9_linux_amd64
 
 ######################################################
 
-# SUBFINDER
+### SUBFINDER
 
 Project: https://github.com/subfinder/subfinder
 
+```
 apt-get install golang
-
 git clone https://github.com/subfinder/subfinder.git
-
 cd subfinder
-
 go build
-
 ./subfinder -d alexu.edu.eg -o result2.txt
+```
 
 ######################################################
 
-# SUBLIST3R
+### SUBLIST3R
 
 Project: https://github.com/aboul3la/Sublist3r
 
+```
 git clone https://github.com/aboul3la/Sublist3r.git
-
 cd Sublist3r
-
 pip install -r requirements.txt
-
 ./sublist3r.py -d alexu.edu.eg -o result3.txt
+```
 
+Combine all the previous tools' results into one file.
+
+```
 cat result1 result2 result3 > results.txt
-
 cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
+```
 
 ######################################################
 
-# BRUTEFORCE
+### BRUTEFORCE
 
-jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
-
-commonspeak: https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains
-
+jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056 <br>
+commonspeak: https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains <br>
 MixWordFile: jhaddix_commonspeak.txt
 
+```
 sed -e 's/$/.alexu.edu.eg/' jhaddix_commonspeak.txt > company_profile.txt
-
 pip install adns-python
-
 python resolve.py company_profile.txt
+```
 
 ######################################################
