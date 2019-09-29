@@ -12,6 +12,8 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ## Web Scraping Techniques
 
+With the scraping techniques it was there a lot of tools that do a great job like Theharverster, Recon-ng and others, but the best tools that were producing the best result are the three following tools.
+
 ### AMASS
 
 [Project Link](https://github.com/OWASP/Amass) <br>
