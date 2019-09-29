@@ -94,4 +94,7 @@ python massForceRev.py 8.8.0.0 8.8.64.255
 - https://poc-server.com/blog/2019/01/18/advanced-recon-subdomains/
 - https://medium.com/soulsecteam/advanced-recon-automation-subdomains-case-1-9ffc4baebf70
 
-If you find me wrong in something or you can make this repo better please let me know.
+#### If you find me wrong in something or you can make this repo better please let me know.
+- [Facebook Profile](https://facebook.com/hassanSaad00)
+- [Linkedin Profile](https://www.linkedin.com/in/HassanSaad00)
+- [Facebook Page](https://www.facebook.com/NineHackers)
