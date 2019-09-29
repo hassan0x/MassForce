@@ -14,8 +14,8 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ### AMASS
 
-[Project Link] (https://github.com/OWASP/Amass) <br>
-[Download Link] (https://github.com/OWASP/Amass/releases)
+[Project Link](https://github.com/OWASP/Amass) <br>
+[Download Link](https://github.com/OWASP/Amass/releases)
 
 ```
 unzip amass_v3.1.9_linux_amd64.zip
@@ -25,7 +25,7 @@ cd amass_v3.1.9_linux_amd64
 
 ### SUBFINDER
 
-[Project Link] (https://github.com/subfinder/subfinder)
+[Project Link](https://github.com/subfinder/subfinder)
 
 ```
 apt-get install golang
@@ -37,7 +37,7 @@ go build
 
 ### SUBLIST3R
 
-Project: https://github.com/aboul3la/Sublist3r
+[Project Link](https://github.com/aboul3la/Sublist3r)
 
 ```
 git clone https://github.com/aboul3la/Sublist3r.git
@@ -55,9 +55,8 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 
 ## BruteForce Techniques.
 
-jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056 <br>
-commonspeak: https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains <br>
-MixWordFile: jhaddix_commonspeak.txt
+[jhaddix Wordlist](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056) <br>
+[commonspeak Wordlist](https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains)
 
 ```
 sed -e 's/$/.alexu.edu.eg/' jhaddix_commonspeak.txt > company_profile.txt
