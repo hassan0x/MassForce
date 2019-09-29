@@ -1,5 +1,4 @@
-# Cyber Securtiy Materials
-## Sub-Domains Enumeration Research
+# Sub-Domains Enumeration Research
 
 ## Research Information
 
@@ -7,7 +6,7 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ### AMASS
 
-Project: https://github.com/OWASP/Amass
+Project: https://github.com/OWASP/Amass <br>
 Download: https://github.com/OWASP/Amass/releases
 
 ```
