@@ -42,6 +42,7 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 BRUTEFORCE
 
 jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
+
 commonspeak: https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains
 
 MixWordFile: jhaddix_commonspeak.txt
