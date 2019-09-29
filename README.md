@@ -59,7 +59,7 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 
 With the brute-force techniques also there were a lot of tools that do a great job, but a few of tools that was producing high performace with this techniques like massDNS but the rate of the false positive was very high in my experience, so i decided to build my own tool, after a lot of research i found a library called adns that was capable of sending a lot of dns queries asynchronously.
 
-The tool is capable of performing brute force of 30,000 subdomains in one minute.
+The tool is capable of performing brute force of 30,000 subdomains in one minute with a very high success rate.
 
 ### The Wordlist
 
@@ -78,9 +78,11 @@ python massForce.py company_profile.txt
 
 With the same previous situation and mindset, i tried to build a reverse lookup dns asynchronous tool.
 
-The tool is also capable of performing brute force of 30,000 IPs in one minute.
+The tool is also capable of performing brute force of 30,000 IPs in one minute with a very high success rate.
 
 ```
 pip install adns-python
 python massForceRev.py 8.8.0.0 8.8.64.255
 ```
+
+#### The tool is based on the [catonmat research](https://catonmat.net/asynchronous-dns-resolution).
