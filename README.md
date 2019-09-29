@@ -1,21 +1,53 @@
 # Cyber Securtiy Materials
-## Network/System Penetration Testing
+## Sub-Domains Enumeration Research
 
-- Recon
-  - Gather DNS Records.
-    - [GitHub Pages](https://pages.github.com/).
-  - Zone Transfer.
-  - Gather Sub-Domains.
-  - Gather Sub-Domains Through Reverse Lookup.
-  - Gather Sub-Domains Through Brute Force.
-  - Gather Emails and Usernames.
-  - Metadata Analysis.
-  - Hacked Emails.
-  - Google Dorks.
-  - Shodan.
+AMASS
 
+Project: https://github.com/OWASP/Amass
 
-- Scanning
-- Exploitation
-- Post-Exploitation
-- Other Attacks
+Download: https://github.com/OWASP/Amass/releases
+
+unzip amass_v3.1.9_linux_amd64.zip
+cd amass_v3.1.9_linux_amd64
+./amass enum --passive -d alexu.edu.eg -o result1.txt
+
+######################################################
+
+SUBFINDER
+
+Project: https://github.com/subfinder/subfinder
+
+apt-get install golang
+git clone https://github.com/subfinder/subfinder.git
+cd subfinder
+go build
+./subfinder -d alexu.edu.eg -o result2.txt
+
+######################################################
+
+SUBLIST3R
+
+Project: https://github.com/aboul3la/Sublist3r
+
+git clone https://github.com/aboul3la/Sublist3r.git
+cd Sublist3r
+pip install -r requirements.txt
+./sublist3r.py -d alexu.edu.eg -o result3.txt
+
+cat result1 result2 result3 > results.txt
+cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
+
+######################################################
+
+BRUTEFORCE
+
+jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
+commonspeak: https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains
+
+MixWordFile: jhaddix_commonspeak.txt
+sed -e 's/$/.alexu.edu.eg/' jhaddix_commonspeak.txt > company_profile.txt
+
+pip install adns-python
+python resolve.py company_profile.txt
+
+######################################################
