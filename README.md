@@ -14,7 +14,7 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ### AMASS
 
-[Project](https://github.com/OWASP/Amass) <br>
+[Project](https://github.com/OWASP/Amass)
 [Download](https://github.com/OWASP/Amass/releases)
 
 ```
