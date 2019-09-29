@@ -85,4 +85,11 @@ pip install adns-python
 python massForceRev.py 8.8.0.0 8.8.64.255
 ```
 
-#### The tool is based on the [catonmat research](https://catonmat.net/asynchronous-dns-resolution).
+#### The repository is based on the research of this guys:
+- https://0xpatrik.com/subdomain-enumeration-2019/
+- https://catonmat.net/asynchronous-dns-resolution
+- https://blog.sweepatic.com/art-of-subdomain-enumeration/
+- https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
+- https://twitter.com/jhaddix/status/974684595709927424?lang=en
+- https://poc-server.com/blog/2019/01/18/advanced-recon-subdomains/
+- https://medium.com/soulsecteam/advanced-recon-automation-subdomains-case-1-9ffc4baebf70
