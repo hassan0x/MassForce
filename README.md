@@ -4,6 +4,12 @@
 
 The best tools and techniques to perform sub-domains enumeration and get the best result with high performance.
 
+### Contents
+
+1. Web Scraping Techniques.
+2. BruteForce Techniques.
+3. Reverse Lookup Techniques.
+
 ### AMASS
 
 Project: https://github.com/OWASP/Amass <br>
