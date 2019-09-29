@@ -20,7 +20,7 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 ```
 unzip amass_v3.1.9_linux_amd64.zip
 cd amass_v3.1.9_linux_amd64
-./amass enum --passive -d alexu.edu.eg -o result1.txt
+./amass enum --passive -d example.com -o result1.txt
 ```
 
 ### SUBFINDER
@@ -32,7 +32,7 @@ apt-get install golang
 git clone https://github.com/subfinder/subfinder.git
 cd subfinder
 go build
-./subfinder -d alexu.edu.eg -o result2.txt
+./subfinder -d example.com -o result2.txt
 ```
 
 ### SUBLIST3R
@@ -43,7 +43,7 @@ go build
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r
 pip install -r requirements.txt
-./sublist3r.py -d alexu.edu.eg -o result3.txt
+./sublist3r.py -d example.com -o result3.txt
 ```
 
 Combine all the previous tools' results into one file.
@@ -59,10 +59,14 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 [commonspeak Wordlist](https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains)
 
 ```
-sed -e 's/$/.alexu.edu.eg/' jhaddix_commonspeak.txt > company_profile.txt
+sed -e 's/$/.example.com/' jhaddix_commonspeak.txt > company_profile.txt
 pip install adns-python
-python resolve.py company_profile.txt
+python massForce.py company_profile.txt
 ```
 
 ## Reverse Lookup Techniques.
 
+```
+pip install adns-python
+python massForceRev.py 8.8.0.0 8.8.64.255
+```
