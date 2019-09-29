@@ -12,7 +12,7 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ######################################################
 
-1. Web Scraping Techniques
+## Web Scraping Techniques
 
 ### AMASS
 
