@@ -1,21 +1,24 @@
 # Cyber Securtiy Materials
 ## Sub-Domains Enumeration Research
 
-AMASS
+## Research Information
+
+The best tools and techniques to perform sub-domains enumeration and get the best result with high performance.
+
+### AMASS
 
 Project: https://github.com/OWASP/Amass
-
 Download: https://github.com/OWASP/Amass/releases
 
+```
 unzip amass_v3.1.9_linux_amd64.zip
-
 cd amass_v3.1.9_linux_amd64
-
 ./amass enum --passive -d alexu.edu.eg -o result1.txt
+```
 
 ######################################################
 
-SUBFINDER
+# SUBFINDER
 
 Project: https://github.com/subfinder/subfinder
 
@@ -31,7 +34,7 @@ go build
 
 ######################################################
 
-SUBLIST3R
+# SUBLIST3R
 
 Project: https://github.com/aboul3la/Sublist3r
 
@@ -49,7 +52,7 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 
 ######################################################
 
-BRUTEFORCE
+# BRUTEFORCE
 
 jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
 
