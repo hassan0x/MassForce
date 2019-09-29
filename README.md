@@ -52,6 +52,8 @@ pip install -r requirements.txt
 ./sublist3r.py -d alexu.edu.eg -o result3.txt
 ```
 
+######################################################
+
 Combine all the previous tools' results into one file.
 
 ```
@@ -61,7 +63,7 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 
 ######################################################
 
-### BRUTEFORCE
+## BruteForce Techniques.
 
 jhaddix: https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056 <br>
 commonspeak: https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains <br>
@@ -74,3 +76,6 @@ python resolve.py company_profile.txt
 ```
 
 ######################################################
+
+## Reverse Lookup Techniques.
+
