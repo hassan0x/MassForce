@@ -12,7 +12,7 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ## Web Scraping Techniques
 
-With the scraping techniques it was there a lot of tools that do a great job like Theharverster, Recon-ng and others, but the best tools that were producing the best result are the three following tools.
+With the scraping techniques it was there a lot of tools that do a great job like TheHarverster, Recon-ng, DNSrecon and others, but the best tools that were producing the best result are the three following tools.
 
 ### AMASS
 
@@ -57,7 +57,7 @@ cat results.txt | tr "[A-Z]" "[a-z]" | sort -u > FinalResult.txt
 
 ## BruteForce Techniques.
 
-With the brute-force techniques also there were a lot of tools that do a great job, but a few of tools that was producing high performace with this techniques like massDNS but the rate of the false positive was very high in my experience, so i decided to build my own tool, after a lot of research i found a library called adns that was capable of sending a lot of dns queries asynchronously.
+With the brute-force techniques also there were a lot of tools that do a great job, but a few of tools that was producing high performance with this techniques like massDNS but the rate of the false positive was very high in my experience, so i decided to build my own tool, after a lot of research i found a library called adns that was capable of sending a lot of dns queries asynchronously.
 
 The tool is capable of performing brute force of 30,000 subdomains in one minute with a very high success rate.
 
