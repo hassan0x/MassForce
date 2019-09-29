@@ -14,8 +14,8 @@ The best tools and techniques to perform sub-domains enumeration and get the bes
 
 ### AMASS
 
-[Project Link](https://github.com/OWASP/Amass) <br>
-[Download Link](https://github.com/OWASP/Amass/releases)
+[Project Link] (https://github.com/OWASP/Amass) <br>
+[Download Link] (https://github.com/OWASP/Amass/releases)
 
 ```
 unzip amass_v3.1.9_linux_amd64.zip
@@ -25,7 +25,7 @@ cd amass_v3.1.9_linux_amd64
 
 ### SUBFINDER
 
-Project: https://github.com/subfinder/subfinder
+[Project Link] (https://github.com/subfinder/subfinder)
 
 ```
 apt-get install golang
