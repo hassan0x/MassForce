@@ -31,7 +31,8 @@ cd amass_v3.1.9_linux_amd64
 
 ```
 apt-get install golang
-git clone https://github.com/subfinder/subfinder.git
+git clone https://github.com/subfinder/subfinder
+go get github.com/subfinder/subfinder
 cd subfinder
 go build
 ./subfinder -d example.com -o result2.txt
@@ -68,6 +69,8 @@ I used the 2 best wordlists jhaddix and commonspeak and combine them in one big 
 [jhaddix Wordlist](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056) <br>
 [commonspeak Wordlist](https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains)
 
+[MassForce](https://github.com/HassanSaad00/Tools/blob/master/MassForce.py)
+
 ```
 wget https://raw.githubusercontent.com/assetnote/commonspeak2-wordlists/master/subdomains/subdomains.txt
 wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt
@@ -75,7 +78,7 @@ sort subdomains.txt all.txt | uniq > jhaddix_commonspeak.txt
 
 sed -e 's/$/.example.com/' jhaddix_commonspeak.txt > company_profile.txt
 pip install adns-python
-python massForce.py company_profile.txt
+python MassForce.py company_profile.txt
 ```
 
 ## Reverse Lookup Techniques.
@@ -84,9 +87,11 @@ With the same previous situation and mindset, i tried to build a reverse lookup 
 
 The tool is also capable of performing brute force of 30,000 IPs in one minute with a very high success rate.
 
+[MassForceRev](https://github.com/HassanSaad00/Tools/blob/master/MassForceRev.py)
+
 ```
 pip install adns-python
-python massForceRev.py 8.8.0.0 8.8.64.255
+python MassForceRev.py 8.8.0.0 8.8.64.255
 ```
 
 #### The repository is based on the research of this guys:
