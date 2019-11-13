@@ -69,6 +69,10 @@ I used the 2 best wordlists jhaddix and commonspeak and combine them in one big 
 [commonspeak Wordlist](https://github.com/assetnote/commonspeak2-wordlists/tree/master/subdomains)
 
 ```
+wget https://raw.githubusercontent.com/assetnote/commonspeak2-wordlists/master/subdomains/subdomains.txt
+wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt
+sort subdomains.txt all.txt | uniq > jhaddix_commonspeak.txt
+
 sed -e 's/$/.example.com/' jhaddix_commonspeak.txt > company_profile.txt
 pip install adns-python
 python massForce.py company_profile.txt
