@@ -14,6 +14,7 @@ I used the best 2 wordlists jhaddix and commonspeak and combine them in one big 
 
 ```
 pip install adns-python
+sed -e 's/$/.example.com/' jhaddix_commonspeak.txt > company_profile.txt
 python MassForce.py company_profile.txt
 ```
 
