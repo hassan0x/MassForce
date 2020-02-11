@@ -1,6 +1,6 @@
 # Sub-Domains Enumeration Tools
 
-This repo has two parts:
+### This repo has two parts:
 1. The BruteForce Techniques.
 2. The Reverse Lookup Techniques.
 
