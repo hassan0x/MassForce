@@ -10,7 +10,7 @@ There was a lot of tools that do the brute-force techniques, but a few of them t
 
 The tool is capable of performing brute force of 30,000 subdomains in one minute with a very high success rate.
 
-I used the 2 best wordlists jhaddix and commonspeak and combine them in one big wordlist called jhaddix_commonspeak.txt .
+I used the best 2 wordlists jhaddix and commonspeak and combine them in one big wordlist called jhaddix_commonspeak.txt .
 
 ```
 pip install adns-python
