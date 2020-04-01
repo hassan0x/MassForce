@@ -10,7 +10,7 @@ else:
 start = struct.unpack('>I', socket.inet_aton(start))[0]
 end = struct.unpack('>I', socket.inet_aton(end))[0]
 
-intensity = 500
+intensity = 50
 resolved_IPs = {}
 active_queries = {}
 IP_queue = []
@@ -55,7 +55,7 @@ def main():
 	while not finished_resolving():
 		while IP_queue and len(active_queries) < intensity:
 			IP = IP_queue.pop()
-			query = mainsub.submit_reverse(IP, adns.rr.PTR)
+			query = mainsub.submit_reverse(IP, adns.rr.PTRraw)
 			active_queries[query] = IP
 		collect_results()
 
