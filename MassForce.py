@@ -9,7 +9,7 @@ else:
 with open(host_file, 'r') as f:
 	hosts = [line.strip() for line in f]
 
-intensity = 500
+intensity = 50
 resolved_hosts = {}
 active_queries = {}
 host_queue = hosts[:]
